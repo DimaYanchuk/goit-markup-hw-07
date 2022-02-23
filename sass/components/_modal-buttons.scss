@@ -21,6 +21,11 @@
   border-radius: 50%;
 
   cursor: pointer;
+
+  &:hover .close-modal__icon,
+  &:focus .close-modal__icon {
+    fill: $accentTextColor;
+  }
 }
 
 .close-modal__icon {
@@ -30,9 +35,4 @@
   fill: $primaryBlackColor;
 
   transition: fill $animation;
-}
-
-.close-modal:hover .close-modal__icon,
-.close-modal:focus .close-modal__icon {
-  fill: $accentTextColor;
 }

@@ -31,11 +31,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: background-color $animation;
-}
 
-.button--primary:focus,
-.button--primary:hover {
-  background-color: #188ce8;
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
 }
 
 .button--secondary {
@@ -51,12 +51,12 @@
   letter-spacing: 0.03em;
 
   transition: background-color $animation, color $animation, box-shadow $animation;
-}
 
-.button--secondary:hover,
-.button--secondary:focus {
-  background-color: $accentTextColor;
-  color: $primaryWhiteColor;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:hover,
+  &:focus {
+    background-color: $accentTextColor;
+    color: $primaryWhiteColor;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }

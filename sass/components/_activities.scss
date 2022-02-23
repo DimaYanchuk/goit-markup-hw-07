@@ -8,10 +8,10 @@
 
 .activities__item {
   margin-right: 30px;
-}
 
-.activities__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .activities__item-wrapper {

@@ -50,10 +50,14 @@
   transition: opacity $animation;
 }
 
-.modal-checkbox__input:checked + .modal-checkbox__icon--unchecked {
-  opacity: 0;
+.modal-checkbox__input:checked {
+  & + .modal-checkbox__icon--unchecked {
+    opacity: 0;
+  }
 }
 
-.modal-checkbox__input:checked ~ .modal-checkbox__icon--checked {
-  opacity: 1;
+.modal-checkbox__input:checked {
+  & ~ .modal-checkbox__icon--checked {
+    opacity: 1;
+  }
 }

@@ -4,8 +4,10 @@
   margin-right: 70px;
 }
 
-.f-address__item:not(:first-child) {
-  margin-top: 9px;
+.f-address__item {
+  &:not(:first-child) {
+    margin-top: 9px;
+  }
 }
 
 .f-address__link {
@@ -21,7 +23,9 @@
   color: $primaryWhiteColor;
 }
 
-.f-address__link:hover,
-.f-address__link:focus {
-  color: $accentTextColor;
+.f-address__link {
+  &:hover,
+  &:focus {
+    color: $accentTextColor;
+  }
 }

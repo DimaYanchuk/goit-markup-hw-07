@@ -3,8 +3,10 @@
   margin-left: auto;
 }
 
-.h-contacts__item:not(:first-child) {
-  margin-left: 50px;
+.h-contacts__item {
+  &:not(:first-child) {
+    margin-left: 50px;
+  }
 }
 
 .h-contacts__link {
@@ -21,11 +23,11 @@
   letter-spacing: 0.02em;
 
   transition: color $animation;
-}
 
-.h-contacts__link:hover,
-.h-contacts__link:focus {
-  color: $accentTextColor;
+  &:hover,
+  &:focus {
+    color: $accentTextColor;
+  }
 }
 
 .h-contacts__icon-envelope {

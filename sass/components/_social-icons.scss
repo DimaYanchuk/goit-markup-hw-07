@@ -5,6 +5,10 @@
 .social__item {
   width: 44px;
   height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social__link {
@@ -16,20 +20,16 @@
   border-radius: 50%;
 }
 
-.social__item:not(:last-child) {
-  margin-right: 10px;
-}
-
 .social__link--light {
   color: $iconLightColor;
 
   transition: color $animation, background-color $animation;
-}
 
-.social__link--light:hover,
-.social__link--light:focus {
-  background-color: $accentTextColor;
-  color: $primaryWhiteColor;
+  &:hover,
+  &:focus {
+    background-color: $accentTextColor;
+    color: $primaryWhiteColor;
+  }
 }
 
 .social__link--dark {
@@ -37,11 +37,11 @@
   background-color: $iconDarkBackgroundColor;
 
   transition: background-color $animation;
-}
 
-.social__link--dark:hover,
-.social__link--dark:focus {
-  background-color: $accentTextColor;
+  &:hover,
+  &:focus {
+    background-color: $accentTextColor;
+  }
 }
 
 .social__icon {

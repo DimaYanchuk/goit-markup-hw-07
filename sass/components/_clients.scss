@@ -2,8 +2,10 @@
   display: flex;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+.clients__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients__link {
@@ -18,12 +20,12 @@
   border-radius: 4px;
 
   transition: color $animation, border $animation;
-}
 
-.clients__link:focus,
-.clients__link:hover {
-  color: $accentTextColor;
-  border: 1px solid $accentTextColor;
+  &:focus,
+  &:hover {
+    color: $accentTextColor;
+    border: 1px solid $accentTextColor;
+  }
 }
 
 .clients__icon {
