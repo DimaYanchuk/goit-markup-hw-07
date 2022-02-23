@@ -1,0 +1,35 @@
+.activities {
+  padding-top: 0;
+}
+
+.activities__list {
+  display: flex;
+}
+
+.activities__item {
+  margin-right: 30px;
+}
+
+.activities__item:last-child {
+  margin-right: 0;
+}
+
+.activities__item-wrapper {
+  position: relative;
+  width: 370px;
+  height: 294px;
+}
+
+.activities__title {
+  position: absolute;
+  bottom: 0;
+
+  margin-bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+
+  color: $primaryWhiteColor;
+  background-color: $activitiesTitle;
+}

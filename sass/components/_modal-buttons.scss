@@ -1,0 +1,38 @@
+.send-form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.close-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: $primaryWhiteColor;
+  border: 1px solid $closeModalBorder;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.close-modal__icon {
+  width: 18px;
+  height: 18px;
+
+  fill: $primaryBlackColor;
+
+  transition: fill $animation;
+}
+
+.close-modal:hover .close-modal__icon,
+.close-modal:focus .close-modal__icon {
+  fill: $accentTextColor;
+}

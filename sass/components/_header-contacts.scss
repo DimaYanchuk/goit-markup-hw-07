@@ -1,0 +1,43 @@
+.h-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.h-contacts__item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.h-contacts__link {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  color: $primaryTextColor;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color $animation;
+}
+
+.h-contacts__link:hover,
+.h-contacts__link:focus {
+  color: $accentTextColor;
+}
+
+.h-contacts__icon-envelope {
+  fill: currentColor;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.h-contacts__icon-phone {
+  fill: currentColor;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}

@@ -1,0 +1,30 @@
+.hero {
+  max-width: 1600px;
+  max-height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  background-color: $heroBackgroundColor;
+  background-image: linear-gradient(to right, $heroLinerGradientColor, $heroLinerGradientColor),
+    url(../images/hero-overlay.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__title {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  max-width: 696px;
+
+  color: $primaryWhiteColor;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.35;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

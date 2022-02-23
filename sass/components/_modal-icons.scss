@@ -1,0 +1,31 @@
+.modal-field__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  transform: translate(12px, 28px);
+
+  fill: $primaryBlackColor;
+
+  transition: fill $animation;
+}
+
+.modal-field:focus-within .modal-field__icon {
+  fill: $accentTextColor;
+}
+
+.modal-field:focus-within .modal-field__input,
+.modal-field:focus-within .modal__comment {
+  border: 1px solid $accentTextColor;
+  outline: 0;
+}
+
+.modal-field:hover .modal-field__icon {
+  fill: $accentTextColor;
+}
+
+.modal-field:hover .modal__comment,
+.modal-field:hover .modal-field__input {
+  border: 1px solid $accentTextColor;
+}

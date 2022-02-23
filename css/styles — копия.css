@@ -12,6 +12,14 @@
   --header-border-color: #ececec;
   --hero-bacground-color: #c4c4c4;
   --icon-light-color: #afb1b8;
+  --icon-dark-background-color: rgba(255, 255, 255, 0.1);
+  --footer-input-border-color: rgba(255, 255, 255, 0.3);
+  --hero-liner-gradient-color: rgba(47, 48, 58, 0.4);
+  --activities-title: rgba(47, 48, 58, 0.8);
+  --backdrop-background-color: rgba(0, 0, 0, 0.2);
+  --modal-input-border-color: rgba(33, 33, 33, 0.2);
+  --modal-placeholder-text-color: rgba(117, 117, 117, 0.5);
+  --close-modal-border: rgba(0, 0, 0, 0.1);
 
   --primary-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
@@ -19,13 +27,38 @@
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+$secondaryBackgroundColor: #2f303a;
+$tetriaryBackgroundColor: #f5f4fa;
+$primaryWhiteColor: #fff;
+$primaryBlackColor: #000;
+$primaryTextColor: #757575;
+$titleTtextColor: #212121;
+$footerLinkColor: rgba(255, 255, 255, 0.6);
+$accentTextColor: #2196f3;
+$headerBorderColor: #ececec;
+$heroBackgroundColor: #c4c4c4;
+$iconLightColor: #afb1b8;
+$iconDarkBackgroundColor: rgba(255, 255, 255, 0.1);
+$footerInputBorderColor: rgba(255, 255, 255, 0.3);
+$heroLinerGradientColor: rgba(47, 48, 58, 0.4);
+$activitiesTitle: rgba(47, 48, 58, 0.8);
+$backdropBackgroundColor: rgba(0, 0, 0, 0.2);
+$modalInputBorderColor: rgba(33, 33, 33, 0.2);
+$modalPlaceholderTextColor: rgba(117, 117, 117, 0.5);
+$closeModalBorder: rgba(0, 0, 0, 0.1);
+
+$primaryFont: Roboto, sans-serif;
+$secondaryFont: Raleway, sans-serif;
+
+$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 body {
   margin: 0;
 
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
+  background-color: $primaryWhiteColor;
+  color: $primaryTextColor;
 
-  font-family: var(--primary-font);
+  font-family: $primaryFont;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -66,7 +99,7 @@ ul {
 .section-title {
   margin-bottom: 50px;
 
-  color: var(--title-text-color);
+  color: $titleTtextColor;
 
   font-weight: 700;
   font-size: 36px;
@@ -94,7 +127,7 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
 
-  color: var(--title-text-color);
+  color: $titleTtextColor;
 }
 
 .container {
@@ -106,9 +139,9 @@ ul {
 }
 
 .logo {
-  color: var(--accent-text-color);
+  color: $accentTextColor;
 
-  font-family: var(--secondary-font);
+  font-family: var($secondaryFont);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -118,11 +151,11 @@ ul {
 }
 
 .logo__text--white {
-  color: var(--primary-white-color);
+  color: $primaryWhiteColor;
 }
 
 .logo__text--black {
-  color: var(--primary-black-color);
+  color: $primaryBlackColor;
 }
 
 .pic {
@@ -148,7 +181,7 @@ ul {
 
   cursor: pointer;
 
-  transition: background-color var(--animation);
+  transition: background-color $animation;
 }
 
 .button--primary {
@@ -159,8 +192,8 @@ ul {
   min-height: 50px;
   padding: 10px 28px;
 
-  background-color: var(--accent-text-color);
-  color: var(--primary-white-color);
+  background-color: $accentTextColor;
+  color: $primaryWhiteColor;
 
   font-weight: 700;
   line-height: 1.87px;
@@ -168,7 +201,7 @@ ul {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  transition: background-color var(--animation);
+  transition: background-color $animation;
 }
 
 .button--primary:focus,
@@ -181,20 +214,20 @@ ul {
   padding: 6px 22px;
   text-align: center;
 
-  background-color: var(--tetriary-background-color);
-  color: var(--title-text-color);
+  background-color: $tetriaryBackgroundColor;
+  color: $titleTtextColor;
 
   font-weight: 500;
   line-height: 1.56;
   letter-spacing: 0.03em;
 
-  transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
+  transition: background-color $animation, color $animation, box-shadow $animation;
 }
 
 .button--secondary:hover,
 .button--secondary:focus {
-  background-color: var(--accent-text-color);
-  color: var(--primary-white-color);
+  background-color: $accentTextColor;
+  color: $primaryWhiteColor;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -224,27 +257,27 @@ ul {
 }
 
 .social__link--light {
-  color: var(--icon-light-color);
+  color: $iconLightColor;
 
-  transition: color var(--animation), background-color var(--animation);
+  transition: color $animation, background-color $animation;
 }
 
 .social__link--light:hover,
 .social__link--light:focus {
-  background-color: var(--accent-text-color);
-  color: var(--primary-white-color);
+  background-color: $accentTextColor;
+  color: $primaryWhiteColor;
 }
 
 .social__link--dark {
-  color: var(--primary-white-color);
-  background-color: rgba(255, 255, 255, 0.1);
+  color: $primaryWhiteColor;
+  background-color: $iconDarkBackgroundColor;
 
-  transition: background-color var(--animation);
+  transition: background-color $animation;
 }
 
 .social__link--dark:hover,
 .social__link--dark:focus {
-  background-color: var(--accent-text-color);
+  background-color: $accentTextColor;
 }
 
 .social__icon {
@@ -257,7 +290,7 @@ ul {
 /* Шапка */
 
 .header {
-  border-bottom: 1px solid var(--header-border-color);
+  border-bottom: 1px solid $headerBorderColor;
 }
 
 .header__container {
@@ -286,19 +319,19 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--title-text-color);
+  color: $titleTtextColor;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: color var(--animation);
+  transition: color $animation;
 }
 
 .nav__link--current {
   position: relative;
-  color: var(--accent-text-color);
+  color: $accentTextColor;
 }
 
 .nav__link--current::after {
@@ -309,13 +342,13 @@ ul {
   content: '';
   width: 100%;
   height: 4px;
-  background-color: var(--accent-text-color);
+  background-color: $accentTextColor;
   border-radius: 2px;
 }
 
 .nav__link:hover,
 .nav__list:focus {
-  color: var(--accent-text-color);
+  color: $accentTextColor;
 }
 
 /* Шапка-Контакты */
@@ -335,19 +368,19 @@ ul {
   padding-top: 20px;
   padding-bottom: 20px;
 
-  color: var(--primary-text-color);
+  color: $primaryTextColor;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: color var(--animation);
+  transition: color $animation;
 }
 
 .h-contacts__link:hover,
 .h-contacts__link:focus {
-  color: var(--accent-text-color);
+  color: $accentTextColor;
 }
 
 .h-contacts__icon-envelope {
@@ -372,7 +405,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
 
-  background-color: var(--secondary-background-color);
+  background-color: $secondaryBackgroundColor;
 }
 
 .footer__container {
@@ -398,28 +431,28 @@ ul {
 }
 
 .f-address__link {
-  color: var(--footer-linc-color);
+  color: $footerLinkColor;
 
   font-style: normal;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  transition: color var(--animation);
+  transition: color $animation;
 }
 
 .f-address__link--white {
-  color: var(--primary-white-color);
+  color: $primaryWhiteColor;
 }
 
 .f-address__link:hover,
 .f-address__link:focus {
-  color: var(--accent-text-color);
+  color: $accentTextColor;
 }
 
 /* Подвал-соц.сети */
 
 .f-social__title {
   margin-bottom: 20px;
-  color: var(--primary-white-color);
+  color: $primaryWhiteColor;
 }
 
 /* Подвал-подписка */
@@ -437,7 +470,7 @@ ul {
 
 .f-form__label {
   margin-bottom: 20px;
-  color: var(--primary-white-color);
+  color: $primaryWhiteColor;
 }
 
 .f-form__input {
@@ -445,9 +478,9 @@ ul {
   width: 358px;
 
   background-color: transparent;
-  color: var(--primary-white-color);
+  color: $primaryWhiteColor;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid $footerInputBorderColor;
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -478,8 +511,8 @@ ul {
   margin-right: auto;
   text-align: center;
 
-  background-color: var(--hero-bacground-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-color: $heroBackgroundColor;
+  background-image: linear-gradient(to right, $heroLinerGradientColor, $heroLinerGradientColor),
     url(../images/hero-overlay.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -491,7 +524,7 @@ ul {
   margin-bottom: 30px;
   max-width: 696px;
 
-  color: var(--primary-white-color);
+  color: $primaryWhiteColor;
 
   font-weight: 900;
   font-size: 44px;
@@ -522,7 +555,7 @@ ul {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
-  background-color: var(--tetriary-background-color);
+  background-color: $tetriaryBackgroundColor;
   border-radius: 4px;
 }
 
@@ -565,14 +598,14 @@ ul {
   padding-bottom: 27px;
   text-align: center;
 
-  color: var(--primary-white-color);
-  background-color: rgba(47, 48, 58, 0.8);
+  color: $primaryWhiteColor;
+  background-color: $activitiesTitle;
 }
 
 /* Команда */
 
 .team {
-  background-color: var(--tetriary-background-color);
+  background-color: $tetriaryBackgroundColor;
 }
 
 .team__list {
@@ -593,7 +626,7 @@ ul {
 .t-card {
   padding: 30px 32px;
 
-  background-color: var(--primary-white-color);
+  background-color: $primaryWhiteColor;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -632,17 +665,17 @@ ul {
   width: 170px;
   height: 92px;
 
-  color: var(--icon-light-color);
-  border: 1px solid var(--icon-light-color);
+  color: $iconLightColor;
+  border: 1px solid $iconLightColor;
   border-radius: 4px;
 
-  transition: color var(--animation), border var(--animation);
+  transition: color $animation, border $animation;
 }
 
 .clients__link:focus,
 .clients__link:hover {
-  color: var(--accent-text-color);
-  border: 1px solid var(--accent-text-color);
+  color: $accentTextColor;
+  border: 1px solid $accentTextColor;
 }
 
 .clients__icon {
@@ -664,20 +697,20 @@ ul {
   width: 100%;
   height: 100%;
 
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: $backdropBackgroundColor
   opacity: 1;
   transform: scale(1);
 
-  transition: opacity var(--animation), transform var(--animation);
+  transition: opacity $animation, transform $animation;
 }
 
-.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   visibility: visible;
   pointer-events: none;
   transform: scale(0);
 
-  transition: opacity var(--animation), transform var(--animation);
+  transition: opacity $animation, transform $animation;
 }
 
 /* Форма модального окна */
@@ -697,7 +730,7 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transition: opacity var(--animation), transform var(--animation);
+  transition: opacity $animation, transform $animation;
 }
 
 .modal__title {
@@ -708,7 +741,7 @@ ul {
   font-size: 20px;
   line-height: 1.15;
 
-  color: var(--title-text-color);
+  color: $titleTtextColor;
 }
 
 /* Поле модального окна */
@@ -731,14 +764,14 @@ ul {
   margin-bottom: 10px;
   padding: 11px 12px 11px 42px;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid $modalInputBorderColor;
   box-sizing: border-box;
   border-radius: 4px;
   outline: transparent;
 
   cursor: pointer;
 
-  transition: border var(--animation);
+  transition: border $animation;
 }
 
 /* Иконки полей */
@@ -751,28 +784,28 @@ ul {
   height: 18px;
   transform: translate(12px, 28px);
 
-  fill: var(--primary-black-color);
+  fill: $primaryBlackColor;
 
-  transition: fill var(--animation);
+  transition: fill $animation;
 }
 
 .modal-field:focus-within .modal-field__icon {
-  fill: var(--accent-text-color);
+  fill: $accentTextColor;
 }
 
 .modal-field:focus-within .modal-field__input,
 .modal-field:focus-within .modal__comment {
-  border: 1px solid var(--accent-text-color);
+  border: 1px solid $accentTextColor;
   outline: 0;
 }
 
 .modal-field:hover .modal-field__icon {
-  fill: var(--accent-text-color);
+  fill: $accentTextColor;
 }
 
 .modal-field:hover .modal__comment,
 .modal-field:hover .modal-field__input {
-  border: 1px solid var(--accent-text-color);
+  border: 1px solid $accentTextColor;
 }
 
 /* Комментарий */
@@ -782,14 +815,14 @@ ul {
   padding: 11px 12px;
   min-height: 120px;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid $modalInputBorderColor;
   box-sizing: border-box;
   border-radius: 4px;
 
   resize: none;
   cursor: pointer;
 
-  transition: border var(--animation);
+  transition: border $animation;
 }
 
 .modal__comment::placeholder {
@@ -797,7 +830,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+  color: $modalPlaceholderTextColor;
 }
 
 /* Согласие чекбокс */
@@ -823,7 +856,7 @@ ul {
   font-size: 14px;
   line-height: 1.64;
 
-  color: var(--accent-text-color);
+  color: $accentTextColor;
   text-decoration: underline;
 }
 
@@ -832,12 +865,12 @@ ul {
   width: 16px;
   height: 15px;
 
-  border: 2px solid var(--primary-black-color);
+  border: 2px solid $primaryBlackColor;
   border-radius: 2px;
 
   opacity: 1;
 
-  transition: opacity var(--animation);
+  transition: opacity $animation;
 }
 
 .modal-checkbox__icon--checked {
@@ -851,7 +884,7 @@ ul {
 
   opacity: 0;
 
-  transition: opacity var(--animation);
+  transition: opacity $animation;
 }
 
 .modal-checkbox__input:checked + .modal-checkbox__icon--unchecked {
@@ -864,13 +897,13 @@ ul {
 
 /* Кнопки модального окна */
 
-.form-send {
+.send-form {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.modal-close {
+.close-modal {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -882,25 +915,25 @@ ul {
   width: 30px;
   height: 30px;
 
-  background-color: var(--primary-white-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $primaryWhiteColor;
+  border: 1px solid $closeModalBorder
   border-radius: 50%;
 
   cursor: pointer;
 }
 
-.modal-close__icon {
+.close-modal__icon {
   width: 18px;
   height: 18px;
 
-  fill: var(--primary-black-color);
+  fill: $primaryBlackColor;
 
-  transition: fill var(--animation);
+  transition: fill $animation;
 }
 
-.modal-close:hover .modal-close__icon,
-.modal-close:focus .modal-close__icon {
-  fill: var(--accent-text-color);
+.close-modal:hover .close-modal__icon,
+.close-modal:focus .close-modal__icon {
+  fill: $accentTextColor;
 }
 
 /* Портфолио */
@@ -933,7 +966,7 @@ ul {
 .projects__link {
   display: block;
 
-  transition: box-shadow var(--animation);
+  transition: box-shadow $animation;
 }
 
 .projects__link:hover,
@@ -996,10 +1029,10 @@ ul {
   font-size: 18px;
   line-height: 28px;
 
-  color: var(--primary-white-color);
-  background-color: var(--accent-text-color);
+  color: $primaryWhiteColor;
+  background-color: $accentTextColor;
   opacity: 0.9;
   transform: translateY(100%);
 
-  transition: transform var(--animation);
+  transition: transform $animation;
 }

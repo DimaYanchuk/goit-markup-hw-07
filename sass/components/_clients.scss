@@ -1,0 +1,34 @@
+.clients__list {
+  display: flex;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  color: $iconLightColor;
+  border: 1px solid $iconLightColor;
+  border-radius: 4px;
+
+  transition: color $animation, border $animation;
+}
+
+.clients__link:focus,
+.clients__link:hover {
+  color: $accentTextColor;
+  border: 1px solid $accentTextColor;
+}
+
+.clients__icon {
+  width: 106px;
+  height: 60px;
+
+  fill: currentColor;
+}

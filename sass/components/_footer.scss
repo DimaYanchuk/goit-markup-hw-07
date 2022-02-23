@@ -1,0 +1,18 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $secondaryBackgroundColor;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}

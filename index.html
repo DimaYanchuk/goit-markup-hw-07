@@ -15,16 +15,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка -->
     <header class="header">
       <div class="container header__container">
         <nav class="nav">
-          <a class="logo header__logo" href="./index.html"
-            >Web<span class="logo__text--black">Studio</span></a
-          >
+          <a class="logo header__logo link" href="./index.html"
+            >Web<span class="logo__text logo__text--black">Studio</span>
+          </a>
 
           <ul class="nav__list list">
             <li class="nav__item">
@@ -66,7 +66,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button" type="button" data-modal-open>Заказать услугу</button>
+          <button class="button button--primary" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -533,7 +535,7 @@
 
         <div class="f-address">
           <a class="logo footer__logo" href="./index.html"
-            >Web<span class="logo__text--white">Studio</span></a
+            >Web<span class="logo__text logo__text--white">Studio</span></a
           >
 
           <address>
@@ -621,7 +623,7 @@
             <b class="f-form__label title">Подпишитесь на рассылку</b>
             <input class="f-form__input" type="email" name="e-mail" placeholder="E-mail" />
           </label>
-          <button class="f-form__button button" type="submit">
+          <button class="button button--primary f-form__button" type="submit">
             Подписаться
             <svg class="f-form__icon">
               <use href="./images/icons/icons.svg#icon-send"></use>
@@ -666,18 +668,18 @@
 
         <label class="modal-checkbox modal-field">
           <input class="modal-checkbox__input visually-hidden" type="checkbox" name="agreement" />
-          <span class="modal-checkbox__icon"></span>
-          <svg class="modal-checkbox__icon-checked">
+          <span class="modal-checkbox__icon modal-checkbox__icon--unchecked"></span>
+          <svg class="modal-checkbox__icon modal-checkbox__icon--checked">
             <use href="./images/icons/icons.svg#icon-modal-checkbox"></use>
           </svg>
           <span class="modal-checkbox__title">Соглашаюсь с рассылкой и принимаю</span>
           <a class="modal-checkbox__link link" href="">Условия договора</a>
         </label>
 
-        <button class="form-send button" type="submit">Отправить</button>
+        <button class="button button--primary send-form" type="submit">Отправить</button>
 
-        <button class="modal-close" type="button" data-modal-close>
-          <svg class="modal-close__icon">
+        <button class="close-modal" type="button" data-modal-close>
+          <svg class="close-modal__icon">
             <use href="./images/icons/icons.svg#icon-modal-close"></use>
           </svg>
         </button>
